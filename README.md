@@ -46,6 +46,27 @@ Este script implementa o método BFGS, uma variação eficiente do método Quasi
 
 Este script Python utiliza o módulo SymPy para realizar uma análise detalhada dos pontos críticos e verificar a convexidade da função \(x^4 - 2x^2y + y^2 + x^2 - 2x + 5\). Ele calcula o gradiente e a matriz Hessiana da função, resolve as equações do gradiente para encontrar os pontos críticos e avalia se estes são mínimos, máximos ou pontos de sela. Além disso, o script verifica a convexidade da função ao analisar os autovalores da matriz Hessiana em um ponto arbitrário. Esta análise fornece insights valiosos sobre a natureza da função, úteis para aplicações em otimização e em teoria de funções de várias variáveis. O script também destaca a implementação de conceitos matemáticos avançados em programação para análise simbólica e numérica.
 
+## Personalização dos Scripts
+
+Todos os scripts deste repositório são configurados para serem facilmente adaptáveis a diferentes funções de otimização. Se desejar explorar outras funções além das pré-definidas, siga os passos abaixo para modificar a função de estudo em cada script:
+
+1. **Localize a Declaração da Função**: Cada script contém uma linha onde a função de otimização é definida, geralmente começando com `user_function = ...`. Esta é a função que você vai querer substituir.
+
+2. **Modificar a Função**: Substitua a função existente pela função de sua escolha. Por exemplo:
+   ```python
+   # Função original
+   user_function = x**4 - 2*(x**2)*y + y**2 + x**2 - 2*x + 5
+
+   # Substitua por uma nova função, como:
+   user_function = 3*x**2 - 12*y - 2*(x-2*y)**3
+   ```
+
+3. **Ajustar Variáveis**: Verifique se as variáveis usadas na sua nova função estão corretamente definidas no início do script. Por exemplo, se sua nova função utiliza uma nova variável `z`, você precisará definir esta variável.
+
+4. **Testar o Script**: Após modificar a função, execute o script para garantir que ele funciona conforme esperado com a nova função. Isso pode incluir verificar se a função é diferenciável e se as bibliotecas utilizadas suportam todas as operações necessárias para sua nova função.
+
+Essa flexibilidade permite que você explore uma ampla gama de problemas de otimização e aplique os métodos aprendidos em diferentes contextos e cenários.
+
 ## Uso
 
 Para executar qualquer um dos scripts, é necessário ter Python instalado em sua máquina, juntamente com as bibliotecas NumPy e SymPy. Os scripts podem ser executados individualmente, conforme a necessidade de explorar cada método de otimização.
