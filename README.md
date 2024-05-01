@@ -64,9 +64,7 @@ Todos os scripts deste repositório são configurados para serem facilmente adap
 3. **Ajustar Variáveis**: Verifique se as variáveis usadas na sua nova função estão corretamente definidas no início do script. Por exemplo, se sua nova função utiliza uma nova variável `z`, você precisará definir esta variável.
 
 4. **Testar o Script**: Após modificar a função, execute o script para garantir que ele funciona conforme esperado com a nova função. Isso pode incluir verificar se a função é diferenciável e se as bibliotecas utilizadas suportam todas as operações necessárias para sua nova função.
-
-Essa flexibilidade permite que você explore uma ampla gama de problemas de otimização e aplique os métodos aprendidos em diferentes contextos e cenários.
-
+   
 ## Uso
 
 Para executar qualquer um dos scripts, é necessário ter Python instalado em sua máquina, juntamente com as bibliotecas NumPy e SymPy. Os scripts podem ser executados individualmente, conforme a necessidade de explorar cada método de otimização.
